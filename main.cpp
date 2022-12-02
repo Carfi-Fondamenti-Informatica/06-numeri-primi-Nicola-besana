@@ -1,16 +1,14 @@
 #include <iostream>
 #include "lib.h"
-
-
+using namespace std;
 int main(){
-int funzione(int a, int i){
-    if (a%i==0){
-        if (a==i)
-            return 1;
-        else
-            return 0;}
-    else
-        funzione(a, i+1);
-}
-  return 0;
+    int a = 0, i = 2;
+    cin >> a;
+    if(numprimo(a, i) == true){
+        cout << "numero primo";
+    }
+    else{
+        cout << "numero non primo";
+    }
+    return 0;
 }
